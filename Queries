@@ -1,0 +1,21 @@
+SELECT Orders.OrderID, Customers.FullName, Orders.Quantity, Orders.OrderDate
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+
+SELECT Customers.CustomerID, Customers.FullName, Orders.OrderID, Orders.OrderDate
+FROM Customers
+LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID;
+
+SELECT Orders.OrderID, Customers.FullName, Orders.OrderDate
+FROM Orders
+LEFT JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+
+SELECT Customers.CustomerID, Customers.FullName, Orders.OrderID, Orders.OrderDate
+FROM Customers
+LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID
+
+UNION
+
+SELECT Customers.CustomerID, Customers.FullName, Orders.OrderID, Orders.OrderDate
+FROM Orders
+LEFT JOIN Customers ON Orders.CustomerID = Customers.CustomerID;

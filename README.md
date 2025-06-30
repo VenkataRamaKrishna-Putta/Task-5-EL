@@ -1,1 +1,1 @@
-# Task-5-EL
+In Task 5 of the SQL Developer Internship, we focused on understanding and applying SQL joins to combine data across related tables. Using the existing Customers and Orders tables, we explored different types of joins — INNER JOIN, LEFT JOIN, RIGHT JOIN (emulated), and FULL OUTER JOIN (emulated) — to retrieve meaningful combined results.
